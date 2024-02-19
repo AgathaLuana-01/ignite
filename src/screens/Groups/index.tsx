@@ -1,20 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import * as S from './styles';
 
-export default function Groups() {
+export function Groups() {
   return (
-    <View style={styles.container}>
-      <Text>Groups</Text>
-      <StatusBar style="auto" />
-    </View>
+    <S.Container>
+      <S.Title>
+        Groups
+      </S.Title>
+    </S.Container>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
