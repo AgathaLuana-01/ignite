@@ -1,12 +1,11 @@
-import * as S from './styles';
+import { Header } from '@components/Header';
+import { Container } from './styles';
 
 export function Groups() {
   return (
-    <S.Container>
-      <S.Title>
-        Groups
-      </S.Title>
-    </S.Container>
+    <Container>
+     <Header/>
+    </Container>
   );
 }
 
