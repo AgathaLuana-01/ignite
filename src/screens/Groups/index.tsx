@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import { FlatList } from 'react-native';
+
 import { Header } from '@components/Header';
 import { Highligth } from '@components/Higthligth';
 import { GroupCard } from '@components/GroupCard';
+import { ListEmpty } from '@components/ListEmpty';
 
 import { Container } from './styles';
 
 export function Groups() {
-  const [groups, setGroups] = useState<string[]>(['Galera da Rocket', 'Amigos']);
+  const [groups, setGroups] = useState<string[]>([]);
 
   return (
     <Container>
@@ -24,6 +26,8 @@ export function Groups() {
           <GroupCard title={item}
           />
         )}
+        contentContainerStyle={groups.length === 0 && {flex: 1}}
+        ListEmptyComponent={() => <ListEmpty message='Que tal cadastrar a primeira turma?' />}
       />
     </Container>
   );
