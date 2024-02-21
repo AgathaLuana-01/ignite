@@ -9,13 +9,15 @@ export function NewGroup() {
     <Container>
       <Header showBackButton />
       <Content>
-        <Icon/>
+        <Icon />
         <Highligth
           title='Nova Turma'
-          subtitle='Crie a turma para adcionar as pessoas'/>
+          subtitle='Crie a turma para adcionar as pessoas' />
         <Input />
         <Button
-          title='Criar'/>
+          title='Criar'
+          style={{ marginTop: 20 }}
+        />
       </Content>
     </Container>
   );
