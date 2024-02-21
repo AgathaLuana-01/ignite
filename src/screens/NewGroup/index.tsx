@@ -13,7 +13,9 @@ export function NewGroup() {
         <Highligth
           title='Nova Turma'
           subtitle='Crie a turma para adcionar as pessoas' />
-        <Input />
+        <Input
+          placeholder='Nome da Turma'
+        />
         <Button
           title='Criar'
           style={{ marginTop: 20 }}
